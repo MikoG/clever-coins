@@ -74,3 +74,10 @@ class MyExRates():
     @property
     def spot_price(self):
         return self.__spot_price
+
+    @property
+    def dict(self):
+        return {'date': self.date, 'time': self.time, 'epoch': self.epoch, 'exchange_rate': self.exchange_rate, 'buy_price': self.buy_price, 'sell_price': self.sell_price, 'spot_price': self.spot_price}
+
+
+        
